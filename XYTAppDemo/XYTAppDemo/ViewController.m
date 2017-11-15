@@ -95,7 +95,7 @@
         
         [[XYTLocalManger manger] deleteTable];
         
-    }]];
+    }]];·
     [self presentViewController:alert animated:YES completion:nil];
     
     
