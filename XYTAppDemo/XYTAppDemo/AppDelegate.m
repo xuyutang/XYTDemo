@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  XYTAppDemo
+//  XYTNetworkingDemo
 //
-//  Created by iOS-Dev on 2017/11/15.
+//  Created by iOS-Dev on 2017/11/13.
 //  Copyright © 2017年 Administrator. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ViewController *VC = [[ViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:VC];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -49,3 +56,4 @@
 
 
 @end
+

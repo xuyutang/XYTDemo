@@ -16,6 +16,13 @@
 		7391483B1FBC107F00562C3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7391483A1FBC107F00562C3D /* main.m */; };
 		739148451FBC107F00562C3D /* XYTAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739148441FBC107F00562C3D /* XYTAppDemoTests.m */; };
 		739148501FBC107F00562C3D /* XYTAppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7391484F1FBC107F00562C3D /* XYTAppDemoUITests.m */; };
+		739148601FBC135700562C3D /* XYTHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7391485F1FBC135700562C3D /* XYTHttpRequest.m */; };
+		739148631FBC13AA00562C3D /* XYTBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 739148621FBC13AA00562C3D /* XYTBaseRequest.m */; };
+		739148671FBC13EC00562C3D /* XYTLocalManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 739148661FBC13EC00562C3D /* XYTLocalManger.m */; };
+		7391486C1FBC148600562C3D /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 739148681FBC148500562C3D /* 640x960.png */; };
+		7391486D1FBC148600562C3D /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 739148691FBC148500562C3D /* 640x1136.png */; };
+		7391486E1FBC148600562C3D /* 8F76E23F-B405-4097-99D6-18C74813AA59.png in Resources */ = {isa = PBXBuildFile; fileRef = 7391486A1FBC148500562C3D /* 8F76E23F-B405-4097-99D6-18C74813AA59.png */; };
+		7391486F1FBC148600562C3D /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 7391486B1FBC148600562C3D /* 320x480.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,16 @@
 		7391484B1FBC107F00562C3D /* XYTAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYTAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7391484F1FBC107F00562C3D /* XYTAppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTAppDemoUITests.m; sourceTree = "<group>"; };
 		739148511FBC107F00562C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7391485E1FBC135700562C3D /* XYTHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTHttpRequest.h; sourceTree = "<group>"; };
+		7391485F1FBC135700562C3D /* XYTHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTHttpRequest.m; sourceTree = "<group>"; };
+		739148611FBC13AA00562C3D /* XYTBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTBaseRequest.h; sourceTree = "<group>"; };
+		739148621FBC13AA00562C3D /* XYTBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTBaseRequest.m; sourceTree = "<group>"; };
+		739148651FBC13EC00562C3D /* XYTLocalManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTLocalManger.h; sourceTree = "<group>"; };
+		739148661FBC13EC00562C3D /* XYTLocalManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTLocalManger.m; sourceTree = "<group>"; };
+		739148681FBC148500562C3D /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		739148691FBC148500562C3D /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
+		7391486A1FBC148500562C3D /* 8F76E23F-B405-4097-99D6-18C74813AA59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8F76E23F-B405-4097-99D6-18C74813AA59.png"; sourceTree = "<group>"; };
+		7391486B1FBC148600562C3D /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
 		8D463EA28743E1E607D40FA7 /* Pods-XYTAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYTAppDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYTAppDemo/Pods-XYTAppDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A94837EB32E94C4EB40BE0B4 /* Pods-XYTAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYTAppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYTAppDemo/Pods-XYTAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +111,8 @@
 		7391481F1FBC107E00562C3D = {
 			isa = PBXGroup;
 			children = (
+				739148641FBC13D400562C3D /* XYTDB */,
+				7391485D1FBC132800562C3D /* XYTNetWorking */,
 				7391482A1FBC107E00562C3D /* XYTAppDemo */,
 				739148431FBC107F00562C3D /* XYTAppDemoTests */,
 				7391484E1FBC107F00562C3D /* XYTAppDemoUITests */,
@@ -116,6 +135,10 @@
 		7391482A1FBC107E00562C3D /* XYTAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7391486A1FBC148500562C3D /* 8F76E23F-B405-4097-99D6-18C74813AA59.png */,
+				7391486B1FBC148600562C3D /* 320x480.png */,
+				739148681FBC148500562C3D /* 640x960.png */,
+				739148691FBC148500562C3D /* 640x1136.png */,
 				7391482B1FBC107E00562C3D /* AppDelegate.h */,
 				7391482C1FBC107E00562C3D /* AppDelegate.m */,
 				7391482E1FBC107F00562C3D /* ViewController.h */,
@@ -145,6 +168,26 @@
 				739148511FBC107F00562C3D /* Info.plist */,
 			);
 			path = XYTAppDemoUITests;
+			sourceTree = "<group>";
+		};
+		7391485D1FBC132800562C3D /* XYTNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				7391485E1FBC135700562C3D /* XYTHttpRequest.h */,
+				7391485F1FBC135700562C3D /* XYTHttpRequest.m */,
+				739148611FBC13AA00562C3D /* XYTBaseRequest.h */,
+				739148621FBC13AA00562C3D /* XYTBaseRequest.m */,
+			);
+			path = XYTNetWorking;
+			sourceTree = "<group>";
+		};
+		739148641FBC13D400562C3D /* XYTDB */ = {
+			isa = PBXGroup;
+			children = (
+				739148651FBC13EC00562C3D /* XYTLocalManger.h */,
+				739148661FBC13EC00562C3D /* XYTLocalManger.m */,
+			);
+			path = XYTDB;
 			sourceTree = "<group>";
 		};
 		8D34E3E38793CD267A820401 /* Pods */ = {
@@ -266,8 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				739148381FBC107F00562C3D /* LaunchScreen.storyboard in Resources */,
+				7391486F1FBC148600562C3D /* 320x480.png in Resources */,
 				739148351FBC107F00562C3D /* Assets.xcassets in Resources */,
+				7391486E1FBC148600562C3D /* 8F76E23F-B405-4097-99D6-18C74813AA59.png in Resources */,
 				739148331FBC107F00562C3D /* Main.storyboard in Resources */,
+				7391486C1FBC148600562C3D /* 640x960.png in Resources */,
+				7391486D1FBC148600562C3D /* 640x1136.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739148631FBC13AA00562C3D /* XYTBaseRequest.m in Sources */,
+				739148671FBC13EC00562C3D /* XYTLocalManger.m in Sources */,
 				739148301FBC107F00562C3D /* ViewController.m in Sources */,
+				739148601FBC135700562C3D /* XYTHttpRequest.m in Sources */,
 				7391483B1FBC107F00562C3D /* main.m in Sources */,
 				7391482D1FBC107E00562C3D /* AppDelegate.m in Sources */,
 			);
@@ -509,6 +559,7 @@
 			baseConfigurationReference = A94837EB32E94C4EB40BE0B4 /* Pods-XYTAppDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U88642WX;
 				INFOPLIST_FILE = XYTAppDemo/Info.plist;
@@ -524,6 +575,7 @@
 			baseConfigurationReference = 8D463EA28743E1E607D40FA7 /* Pods-XYTAppDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67U88642WX;
 				INFOPLIST_FILE = XYTAppDemo/Info.plist;
