@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+target 'XYTAppDemo' do
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'FMDB'
+end
+
