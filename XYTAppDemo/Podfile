@@ -3,5 +3,6 @@ target 'XYTAppDemo' do
 pod 'AFNetworking'
 pod 'MJExtension'
 pod 'FMDB'
+pod 'MJRefresh'
 end
 

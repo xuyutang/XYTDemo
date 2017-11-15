@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XYTBaseRequest.h"
 #import "XYTLocalManger.h"
+#import "MyViewController.h"
 
 @interface ViewController ()
 
@@ -45,7 +46,19 @@
     [button3 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     
     [button3 addTarget:self action:@selector(dbDeleteAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [self.view addSubview:button3];
+    
+    UIButton *button4 = [UIButton buttonWithType:UIButtonTypeCustom] ;
+    button4.frame = CGRectMake(80, 320, 150, 40);
+    [button4 setTitle:@"push" forState:UIControlStateNormal];
+    
+    [button4 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+    [button4 addTarget:self action:@selector(pushAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button4];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)loadRequest {
@@ -95,11 +108,17 @@
         
         [[XYTLocalManger manger] deleteTable];
         
-    }]];·
+    }]];
     [self presentViewController:alert animated:YES completion:nil];
     
     
 }
+
+-(void)pushAction {
+    MyViewController *myVC = [[MyViewController alloc] init];
+    [self.navigationController pushViewController:myVC animated:NO];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

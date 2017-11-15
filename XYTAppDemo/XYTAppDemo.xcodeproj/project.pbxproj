@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5788AEB8376E100F144B34D0 /* libPods-XYTAppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63260966E4D314A97088FB0C /* libPods-XYTAppDemo.a */; };
+		738EBF3C1FBC464D005B7EFC /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 738EBF3B1FBC464D005B7EFC /* MyViewController.m */; };
 		7391482D1FBC107E00562C3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7391482C1FBC107E00562C3D /* AppDelegate.m */; };
 		739148301FBC107F00562C3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7391482F1FBC107F00562C3D /* ViewController.m */; };
 		739148331FBC107F00562C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739148311FBC107F00562C3D /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		63260966E4D314A97088FB0C /* libPods-XYTAppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYTAppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		738EBF3A1FBC464D005B7EFC /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		738EBF3B1FBC464D005B7EFC /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		739148281FBC107E00562C3D /* XYTAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYTAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7391482B1FBC107E00562C3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7391482C1FBC107E00562C3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				739148361FBC107F00562C3D /* LaunchScreen.storyboard */,
 				739148391FBC107F00562C3D /* Info.plist */,
 				7391483A1FBC107F00562C3D /* main.m */,
+				738EBF3A1FBC464D005B7EFC /* MyViewController.h */,
+				738EBF3B1FBC464D005B7EFC /* MyViewController.m */,
 			);
 			path = XYTAppDemo;
 			sourceTree = "<group>";
@@ -374,9 +379,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XYTAppDemo/Pods-XYTAppDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -396,6 +404,7 @@
 				739148601FBC135700562C3D /* XYTHttpRequest.m in Sources */,
 				7391483B1FBC107F00562C3D /* main.m in Sources */,
 				7391482D1FBC107E00562C3D /* AppDelegate.m in Sources */,
+				738EBF3C1FBC464D005B7EFC /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
