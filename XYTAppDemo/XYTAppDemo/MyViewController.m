@@ -14,6 +14,8 @@
 @interface MyViewController ()<UITableViewDelegate,UITableViewDataSource> {
     
     UITableView *tabView;
+    NSMutableArray *dataArr;
+    int index;
 }
 
 @end
@@ -22,8 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    dataArr = [[NSMutableArray alloc] init];
     self.navigationItem.title = @"mytableView";
-    tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 640) style:UITableViewStylePlain];
+    tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
     tabView.delegate = self;
     tabView.dataSource = self;
     tabView.backgroundColor = [UIColor cyanColor];
@@ -32,7 +35,12 @@
     tabView.mj_header.automaticallyChangeAlpha = YES;
     
     //进入刷新状态
-    [tabView.mj_header beginRefreshing];
+   // [tabView.mj_header beginRefreshing];
+    
+    //上拉刷新
+    tabView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopic)];
+    
+   
     [self.view addSubview:tabView];
     
     // Do any additional setup after loading the view.
@@ -42,8 +50,17 @@
     
    [tabView.mj_header endRefreshing];
 }
+
+-(void)loadMoreTopic {
+    [dataArr addObject:[NSString stringWithFormat:@"第%d条数据",index++]];
+    
+     [tabView.mj_footer endRefreshing];
+    [tabView reloadData];
+    
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return dataArr.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -57,7 +74,7 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"swdqd"];
-        cell.textLabel.text = @"1212121212";
+        cell.textLabel.text = dataArr[indexPath.row];
         
     }
     return cell;
